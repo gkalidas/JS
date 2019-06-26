@@ -10,6 +10,8 @@ const routes = (app) => {
     app.route('/contact')
     .get((req, res,next) =>{
         //middleware
+        //middleware is a express () that have access to the 
+        //req and res objects and act on them
         console.log(`Request from: ${req.originalUrl}`)
         console.log(`Request type: ${req.method}`)
         next();
